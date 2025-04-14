@@ -10,13 +10,6 @@ pipeline {
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 
-    stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/ChethanRaj13/Jenkins-CICD.git'
-            }
-        }
-
         stage('Install dependencies') {
             steps {
                 sh 'pip install -r requirements.txt'
