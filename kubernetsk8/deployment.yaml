@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: flask-container
-          image: chethanraj13/jenkins:13
+          image: chethanraj13/jenkins:latest
           ports:
             - containerPort: 5000
