@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'pip install -r requirements.txt'
+                sh 'HOME=/tmp pip install --user -r requirements.txt'
             }
         }
 
