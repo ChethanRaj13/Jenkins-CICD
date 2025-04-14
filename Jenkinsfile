@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('Install dependencies') {
             steps {
-                sh 'HOME=/tmp pip install --user -r requirements.txt'
+               sh 'pip install --no-cache-dir --prefix=/tmp -r requirements.txt'
             }
         }
 
