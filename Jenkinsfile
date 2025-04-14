@@ -1,9 +1,5 @@
 pipeline {
-    agent {
-        docker {
-            image 'python:3.12-slim'
-        }
-    }
+    agent any
 
     environment {
         DOCKER_HUB_REPO = 'chethanraj13/jenkins'
