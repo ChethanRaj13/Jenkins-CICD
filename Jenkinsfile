@@ -7,11 +7,17 @@ pipeline {
     }
 
     stages {
-        stage('Install dependencies') {
-            steps {
-               sh 'pip install --no-cache-dir --prefix=/tmp -r requirements.txt'
-            }
+       stage('Install dependencies') {
+    agent {
+        docker {
+            image 'python:3.12-slim'
         }
+    }
+    steps {
+        sh 'pip install --no-cache-dir --prefix=/tmp -r requirements.txt'
+    }
+}
+
 
         stage('Run tests') {
             steps {
