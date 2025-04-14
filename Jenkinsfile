@@ -10,6 +10,7 @@ pipeline {
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
 
+    stages {
         stage('Install dependencies') {
             steps {
                 sh 'pip install -r requirements.txt'
