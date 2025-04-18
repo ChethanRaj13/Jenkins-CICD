@@ -218,13 +218,21 @@ Go to Applications → + NEW APP
 Fill in the fields:
 
 App Name: flask-app
+
 Project: default
-Sync Policy: Automatic 
+
+Sync Policy: Automatic
+
 Repository URL:	https://github.com/YourUsername/RepoName.git
+
 Revision: HEAD 
+
 Path: kubernetsk8
+
 Cluster: https://kubernetes.default.svc
+
 Namespace	default (or your choice)
+
 Click Create
 
 6. Sync and Deploy
