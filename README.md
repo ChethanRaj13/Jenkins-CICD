@@ -46,11 +46,13 @@ ________________________________________________________________________________
    cd Jenkins-CICD
    ```
 2. Build the Docker Image
-```
-docker build -t flask-app.
+   ```
+   docker build -t flask-app.
+   ```
+3. Run the Application Locally
+   ```
+   docker run -d -p 5000:5000 flask-app
+   ```
+Access the application at http://localhost:5000
 
-```
-
-
-3. 
 
