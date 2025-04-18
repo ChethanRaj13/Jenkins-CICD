@@ -13,10 +13,15 @@ ________________________________________________________________________________
 ## Prerequisites
 
 Docker
+
 Kubernetes (e.g., Minikube or a cloud provider)
+
 Jenkins
+
 Kubectl
+
 Python 3.x​
+
 aws account
 _____________________________________________________________________________________________________
 ## Project Structure
@@ -31,3 +36,21 @@ ________________________________________________________________________________
 └── templates/             # HTML templates for Flask
     └── index.html
 ```
+_______________________________________________________________________________________________________
+
+## Step 1: Run the Flask app locally
+
+1. Clone the git repo:
+   ```
+   git clone https://github.com/ChethanRaj13/Jenkins-CICD.git
+   cd Jenkins-CICD
+   ```
+2. Build the Docker Image
+```
+docker build -t flask-app.
+
+```
+
+
+3. 
+
